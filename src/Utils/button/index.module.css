@@ -1,0 +1,17 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	width: fit-content;
+	background-color: var(--secondary-color);
+}
+.btn__icon {
+	margin-top: 2px;
+	margin-left: 3px;
+}
+
+/*
+	padding: 0.25em 1em;
+
+	*/

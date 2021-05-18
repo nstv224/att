@@ -1,0 +1,123 @@
+.dashboard {
+	background-color: var(--primary-color);
+	flex-direction: column;
+	display: flex;
+	padding: 3vh;
+	height: 93vh;
+}
+.topbar {
+	width: 100%;
+	height: 7vh;
+	margin-bottom: 3vh;
+	display: flex;
+}
+.left__container {
+	flex: 0.2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.right__container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.body {
+	/* background-color: var(--secondary-color); */
+	width: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 0.6rem 1.2rem;
+	margin: 0 10px;
+}
+.btn:active {
+	transform: scale(0.95);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.panel {
+	flex: 0.5;
+	border-radius: 5px;
+}
+.editor {
+	background-color: var(--secondary-color);
+	font-family: monospace;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 73.5vh;
+	flex: 1;
+}
+.editor__output {
+	border: 1px solid var(--secondary-color);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	padding: 15px;
+	max-height: 73.5vh;
+	background-color: var(--primary-color);
+	min-width: 48vw;
+	flex: 1;
+}
+.play__btn__container {
+	position: absolute;
+	height: 10.5vh;
+	top: 10%;
+	transform: translate(-50%, -50%);
+	left: 98.5%;
+	top: 15%;
+	width: 10.5vh;
+	z-index: 2;
+}
+.play__btn__back {
+	background-color: var(--stroke-color);
+	position: relative;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	transition: transform ease-in 0.05s;
+}
+.play__btn {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 10vh;
+	height: 10vh;
+	border-radius: 50%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	cursor: pointer;
+}
+.play__btn:active {
+	background-color: #17b794;
+}
+.play__btn__back:active {
+	background-color: var(--stroke-color);
+	transform: scale(0.95);
+	border-radius: 50%;
+}
+.output__text {
+	color: var(--color);
+	font-weight: 500;
+}
+.resizable__container {
+	display: flex;
+	position: relative;
+}
+.custom__handle {
+	height: 75vh;
+	background-color: transparent;
+	cursor: col-resize;
+	width: 15px;
+}

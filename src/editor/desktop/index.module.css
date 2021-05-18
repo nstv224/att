@@ -1,0 +1,6 @@
+.container {
+	font-family: "Alata", sans-serif;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}

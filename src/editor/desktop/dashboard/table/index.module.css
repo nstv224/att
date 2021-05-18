@@ -1,0 +1,55 @@
+.table__wrapper {
+	min-height: 0;
+	height: 100%;
+	overflow: auto;
+}
+.table {
+}
+
+/*Custom Scrollbar*/
+.table__wrapper::-webkit-scrollbar {
+	width: 10px;
+}
+
+.table__wrapper::-webkit-scrollbar-track {
+	background-color: #1e2f3bec;
+}
+
+.table__wrapper::-webkit-scrollbar-thumb {
+	background-color: var(--secondary-color);
+}
+.cell {
+	padding: 0.5em 0.5em;
+}
+.success {
+	color: var(--success);
+}
+.row__cell {
+	display: flex;
+	justify-content: center;
+	min-width: 140px;
+	align-items: center;
+	border: 1px solid #eeeeee;
+}
+.row {
+	display: flex;
+}
+
+.download {
+	display: inline-block;
+	margin: 10px 0;
+	width: fit-content;
+	cursor: pointer;
+}
+.header {
+	padding: 0.5em;
+}
+.icon {
+	margin: auto 2px;
+}
+.icon path {
+	color: var(--success);
+}
+.link {
+	width: fit-content;
+}

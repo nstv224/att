@@ -1,0 +1,23 @@
+.container {
+	height: 100%;
+	width: 35px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+.line {
+	height: 5px;
+	background-color: var(--color);
+}
+.large__line {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.small__line {
+	width: 40%;
+}
+.medium__line {
+	width: 80%;
+}

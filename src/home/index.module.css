@@ -1,0 +1,143 @@
+.container {
+	font-family: "Alata", sans-serif;
+	padding-left: 2em;
+	padding-right: 2em;
+	display: flex;
+	flex-direction: column;
+}
+.navbar__brand {
+	display: flex;
+	align-items: center;
+}
+
+.brand__icon {
+	margin: 0 5px;
+	font-size: 20px;
+}
+.hero {
+	padding: 3em 5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.success {
+	color: var(--success);
+}
+.title {
+	font-size: 5rem;
+	word-spacing: -8px;
+}
+.text {
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 1em;
+	margin-top: 1.5em;
+}
+.btn {
+	padding: 0.8em 2em;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--success);
+	font-weight: 600;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--color);
+}
+.icon {
+	margin: 0 4px;
+}
+
+.product__container {
+	width: 90vw;
+	margin: 0 auto;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	position: relative;
+	animation-name: animatebottom;
+	animation-duration: 1s;
+}
+.product {
+	width: 100%;
+	height: auto;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	min-height: 70vh;
+}
+a {
+	text-decoration: none;
+}
+.footer__container {
+	margin: 1em 0;
+}
+
+.footer {
+	text-align: center;
+}
+.warning {
+	color: var(--warning);
+}
+
+@-webkit-keyframes animatebottom {
+	from {
+		bottom: -200px;
+		opacity: 0;
+	}
+	to {
+		bottom: 0px;
+		opacity: 1;
+	}
+}
+@keyframes animatebottom {
+	from {
+		bottom: -50px;
+		opacity: 0;
+	}
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 426px) {
+	.hero {
+		padding: 1.5em 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.title {
+		font-size: calc(3rem + 0.1vw);
+		word-spacing: -2px;
+		text-align: center;
+		line-height: 3.6rem;
+	}
+	.text {
+		font-size: calc(1.15rem + 0.1vw);
+		margin-bottom: 2rem;
+	}
+	.product__container {
+		width: 80vw;
+	}
+	.product {
+		min-height: auto;
+	}
+	.btn {
+		margin: 1rem 0;
+	}
+	.product__container {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.footer__container {
+		display: flex;
+		flex: 1;
+		align-items: flex-end;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	.footer {
+		position: relative;
+		margin-bottom: 1rem;
+	}
+}
